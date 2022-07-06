@@ -1,14 +1,6 @@
 /// <reference types="react" />
-interface ISection {
-    title: string;
-    subTitle: string;
-    children: any;
-    showMore: boolean;
-    icon: any;
-}
-declare const Section: (props: ISection) => JSX.Element;
-
-interface CardProps {
+import "./Card.css";
+export interface CardProps {
     type: "top-avatar" | "bottom-avatar" | "no-avatar";
     avatarSrc?: string;
     name?: string;
@@ -26,5 +18,4 @@ interface CardProps {
     lastRelese?: string;
 }
 declare const Card: ({ avatarSrc, productSrc, type, rate, rates, productName, productDescription, productColor, skinType, lastRelese, name, title, productTitle, icon, iconFill }: CardProps) => JSX.Element;
-
-export { Card, Section };
+export default Card;

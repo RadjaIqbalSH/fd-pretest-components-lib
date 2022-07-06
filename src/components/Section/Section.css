@@ -1,0 +1,53 @@
+.section {
+  margin-left: 2.5rem;
+  margin-top: 5rem;
+  width: fit-content;
+}
+
+@media (min-width: 1536px) {
+  .section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section-title-box {
+  display: flex;
+  margin-top: 0.5rem;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.section-sub-title {
+  color: #9ca3af;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.section-button {
+  display: flex;
+  margin-left: 0.5rem;
+  transition-property: all;
+  color: #f87171;
+  align-items: center;
+}
+
+.section-button:hover {
+  color: #fecaca;
+}
+
+.section-button-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
