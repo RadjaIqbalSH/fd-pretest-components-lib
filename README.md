@@ -1,7 +1,5 @@
 ## Component compail
 
-Gunakan yarn untuk install dependency
-
 ```
 npm run rollup
 ```
@@ -9,11 +7,17 @@ npm run rollup
 ### install dependency
 
 ```
-npm i
+npm install
 ```
 
 ### Relese version
 
 ```
 npm publish
+```
+
+### Run Storybook
+
+```
+npm run storybook
 ```
