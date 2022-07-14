@@ -4,7 +4,7 @@
 npm run rollup
 ```
 
-### install dependency
+### Install dependency
 
 ```
 npm install
@@ -17,6 +17,8 @@ npm publish
 ```
 
 ### Run Storybook
+
+For maximum experience using dark mode when running storybooks
 
 ```
 npm run storybook
