@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import { Story } from '@storybook/react';
-import { IArticleCard } from '@typings/ArticleCard';
+import { IArticleCard } from '../typings/ArticleCard';
 declare const _default: {
     component: ({ keyIndex, className, data }: IArticleCard) => JSX.Element;
 };

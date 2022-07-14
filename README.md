@@ -23,3 +23,15 @@ For maximum experience using dark mode when running storybooks
 ```
 npm run storybook
 ```
+
+### Run testing
+
+```
+npm run test:unit
+```
+
+### Open testing GUI
+
+```
+npm run test:unit:open
+```

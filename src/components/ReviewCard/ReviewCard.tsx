@@ -18,6 +18,7 @@ const ReviewCard = ({ keyIndex, className, starIcon, starIconFill, data }: IRevi
 
   return (
     <div
+      data-cy="review"
       className={[
         'mb-20 px-4 pt-4 pb-10 border-2 border-gray-50 rounded-lg relative',
         className,
@@ -26,24 +27,39 @@ const ReviewCard = ({ keyIndex, className, starIcon, starIconFill, data }: IRevi
     >
       <div className="w-full h-fit absolute left-0 -bottom-20 flex flex-col items-center">
         <div className="w-14 h-14 rounded-full bg-gray-50 relative overflow-hidden">
-          <img className="w-full h-full object-cover" src={data.avatarUrl} alt="Avatar"></img>
+          <img
+            data-cy="review-avatar"
+            className="w-full h-full object-cover"
+            src={data.avatarUrl}
+            alt="Avatar"
+          ></img>
         </div>
-        <p className="mt-2 w-full truncate text-center">{data.name}</p>
-        <p className="w-full truncate text-center">{data.title}</p>
+        <p data-cy="review-name" className="mt-2 w-full truncate text-center">
+          {data.name}
+        </p>
+        <p data-cy="review-title" className="w-full truncate text-center">
+          {data.title}
+        </p>
       </div>
       <div className="w-full h-20 flex space-x-4">
         <div className="flex-none w-20 h-20 bg-white relative overflow-hidden rounded-lg">
           <img
+            data-cy="review-img"
             className="w-full h-full object-contain"
             src={data.productUrl}
             alt="Product image"
           ></img>
         </div>
         <div className="flex-none w-[60%] h-20">
-          <p className="mt-2 text-xl font-semibold w-full truncate hover:text-red-500 cursor-pointer">
+          <p
+            data-cy="review-product-name"
+            className="mt-2 text-xl font-semibold w-full truncate hover:text-red-500 cursor-pointer"
+          >
             {data.productName}
           </p>
-          <p className="mt-0 w-full truncate">{data.productBrand}</p>
+          <p data-cy="review-product-brand" className="mt-0 w-full truncate">
+            {data.productBrand}
+          </p>
         </div>
       </div>
       <div className="border-t-2 mt-4 border-gray-50"></div>
@@ -54,9 +70,15 @@ const ReviewCard = ({ keyIndex, className, starIcon, starIconFill, data }: IRevi
             else return <span key={index}>{starIcon}</span>;
           })}
         </div>
-        <p className="text-gray-100 text-sm">{data.publish}</p>
+        <p data-cy="review-publish" className="text-gray-100 text-sm">
+          {data.publish}
+        </p>
       </div>
-      <p id={`product-description-${keyIndex}`} className="mt-2 text-sm line-clamp-4">
+      <p
+        data-cy="review-product-description"
+        id={`product-description-${keyIndex}`}
+        className="mt-2 text-sm line-clamp-4"
+      >
         {data.productDescription}
       </p>
       <button
