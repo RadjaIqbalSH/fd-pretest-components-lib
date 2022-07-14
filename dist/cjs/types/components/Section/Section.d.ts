@@ -1,5 +1,4 @@
 /// <reference types="react" />
-import "./Section.css";
 export interface ISection {
     title: string;
     subTitle: string;
