@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { GroupCard } from '@components';
-import { IGroupCard } from '@typings/GroupCard';
+import { GroupCard } from '../components';
+import { IGroupCard } from '../typings/GroupCard';
 
 export default {
   component: GroupCard,

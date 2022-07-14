@@ -19,13 +19,7 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "emitDeclarationOnly": true,
-    "noImplicitAny": false,
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["./src/components/*"],
-      "@components": ["./src/components/index.ts"],
-      "@typings/*": ["./src/typings/*"]
-    }
+    "noImplicitAny": false
   },
   "include": ["src"]
 }

@@ -1,7 +1,6 @@
 import { Story } from '@storybook/react';
-import { Ads } from '@components';
-import { IAds } from '@typings/Ads';
-
+import { Ads } from '../components';
+import { IAds } from '../typings/Ads';
 export default {
   component: Ads,
   label: 'Labelz',

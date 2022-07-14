@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { TopAvatarCard } from '@components';
-import { ITopAvatarCard } from '@typings/TopAvatarCard';
+import { TopAvatarCard } from '../components';
+import { ITopAvatarCard } from '../typings/TopAvatarCard';
 
 export default {
   component: TopAvatarCard,

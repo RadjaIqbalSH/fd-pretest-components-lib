@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { ArticleCard } from '@components';
-import { IArticleCard } from '@typings/ArticleCard';
+import { ArticleCard } from '../components';
+import { IArticleCard } from '../typings/ArticleCard';
 
 export default {
   component: ArticleCard,

@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { Brands } from '@components';
-import { IBrands } from '@typings/Brands';
+import { Brands } from '../components';
+import { IBrands } from '../typings/Brands';
 
 export default {
   component: Brands,

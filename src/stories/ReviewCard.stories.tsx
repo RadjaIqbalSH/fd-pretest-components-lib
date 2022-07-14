@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { ReviewCard } from '@components';
-import { IReviewCard } from '@typings/ReviewCard';
+import { ReviewCard } from '../components';
+import { IReviewCard } from '../typings/ReviewCard';
 
 export default {
   component: ReviewCard,

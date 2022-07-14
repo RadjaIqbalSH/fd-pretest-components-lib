@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { Card } from '@components';
-import { ICard } from '@typings/Card';
+import { Card } from '../components';
+import { ICard } from '../typings/Card';
 
 export default {
   component: Card,
