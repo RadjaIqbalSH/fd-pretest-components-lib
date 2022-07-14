@@ -2,6 +2,12 @@ import React from 'react';
 import { ArticleCard } from '../../src/components';
 
 describe('ArticleCard', () => {
+  const articleCard = '[data-cy="article-card"]';
+  const articleTitle = '[data-cy="article-title"]';
+  const articleUsername = '[data-cy="article-username"]';
+  const articlePublish = '[data-cy="article-publish"]';
+  const articleImg = '[data-cy="article-img"]';
+
   it('Component porops test', () => {
     cy.mount(
       <ArticleCard
@@ -15,10 +21,10 @@ describe('ArticleCard', () => {
         }}
       />,
     );
-    cy.get('[data-cy="article-card"]').should('have.class', 'w-full h-fit');
-    cy.get('[data-cy="article-title"]').should('have.text', 'test');
-    cy.get('[data-cy="article-username"]').should('have.text', 'test');
-    cy.get('[data-cy="article-publish"]').should('have.text', 'test');
-    cy.get('[data-cy="article-img"]').should('have.attr', 'src', 'test');
+    cy.get(articleCard).should('have.class', 'w-full h-fit');
+    cy.get(articleTitle).should('have.text', 'test');
+    cy.get(articleUsername).should('have.text', 'test');
+    cy.get(articlePublish).should('have.text', 'test');
+    cy.get(articleImg).should('have.attr', 'src', 'test');
   });
 });

@@ -9,11 +9,11 @@ const Ads = ({ label, label2, className }: IAds) => {
         className,
       ].join(' ')}
     >
-      <p data-cy="label-1" className="text-2xl font-bold text-black-400">
+      <p data-cy="ads-label-1" className="text-2xl font-bold text-black-400">
         {label}
       </p>
       {label2 && (
-        <p data-cy="label-2" className="text-2xl font-bold text-black-400">
+        <p data-cy="ads-label-2" className="text-2xl font-bold text-black-400">
           {label2}
         </p>
       )}
